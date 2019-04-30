@@ -10,6 +10,9 @@ public class AirportsInUsaSolution {
 
     public static void main(String[] args) throws Exception {
 
+//        local[2]: 2 cores
+//        local[*]: all available cores
+//        local   : 1 core
         SparkConf conf = new SparkConf().setAppName("airports").setMaster("local[2]");
 
         JavaSparkContext sc = new JavaSparkContext(conf);
